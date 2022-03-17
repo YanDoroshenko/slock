@@ -375,8 +375,8 @@ main(int argc, char **argv) {
 	/* Load picture */
         Imlib_Image buffer = imlib_load_image(background_image);
 	imlib_context_set_image(buffer);
-        int width = imlib_image_get_width();
-        int height = imlib_image_get_height();
+        int background_image_width = imlib_image_get_width();
+        int background_image_height = imlib_image_get_height();
 
         /* Create an image to be rendered */
 	Screen *scr = ScreenOfDisplay(dpy, DefaultScreen(dpy));
@@ -390,7 +390,7 @@ main(int argc, char **argv) {
 
         int i;
         for (i = 0; i < number_of_monitors; i++) {
-            imlib_blend_image_onto_image(buffer, 0, 0, 0, width, height, monitors[i].x, monitors[i].y, monitors[i].width, monitors[i].height);
+            imlib_blend_image_onto_image(buffer, 0, 0, 0, background_image_width, background_image_height, monitors[i].x, monitors[i].y, monitors[i].width, monitors[i].height);
         }
 
         /* Clean up */
