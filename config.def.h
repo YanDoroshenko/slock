@@ -20,7 +20,7 @@ static const char *background_image = "/usr/share/slock/background.jpeg";
 /*Enable blur*/
 #define BLUR
 /*Set blur radius*/
-static const int blurRadius=10;
+static const int blurRadius=50;
 /*Enable Pixelation*/
 //#define PIXELATION
 /*Set pixelation radius*/
