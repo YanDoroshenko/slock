@@ -18,10 +18,10 @@ static const int monitortime = 5;
 static const char *background_image = "/usr/share/slock/background.jpeg";
 
 /*Enable blur*/
-#define BLUR
+//#define BLUR
 /*Set blur radius*/
 static const int blurRadius=50;
 /*Enable Pixelation*/
-//#define PIXELATION
+#define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=10;
+static const int pixelSize=60;
