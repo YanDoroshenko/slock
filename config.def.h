@@ -14,14 +14,5 @@ static const int failonclear = 1;
 /* time in seconds before the monitor shuts down */
 static const int monitortime = 5;
 
-/* Background image */
-static const char *background_image = "/usr/share/slock/background.jpeg";
-
-/*Enable blur*/
-//#define BLUR
-/*Set blur radius*/
-static const int blurRadius=50;
-/*Enable Pixelation*/
-#define PIXELATION
-/*Set pixelation radius*/
-static const int pixelSize=60;
+/* Background image path, should be available to the user above */
+static const char* background_image = "/usr/share/slock/background.jpeg";
